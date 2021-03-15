@@ -4,6 +4,73 @@
 
 @media screen and (max-width: 767px) {
 
+  body {
+    font-size: 16px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .row__topbar--white {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .menu__icon {
+    width: 44px;
+    height: 44px;
+    padding: 6px;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .topbar__logo {
+    width: 48px;
+  }
+
+  .topbar__icons {
+    display: flex;
+  }
+
+  .icon__search, 
+  .icon__bag {
+    width: 44px;
+    height: 44px;
+    padding: 6px;
+  }
+
+  #logo {
+    width: 100%;
+    height: auto;
+    transform: translateX(15px);
+    -webkit-transform: translateX(15px);
+    -moz-transform: translateX(15px);
+    -ms-transform: translateX(15px);
+    -o-transform: translateX(15px);
+}
+
+  #search,
+  #bag,
+  #menu-burger {
+    width: 100%;
+    height: auto;
+  }
+
+  .row__topbar--black {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    line-height: 0.2em;
+  }
 }
 
 @media screen and (max-width: 1024px) {
