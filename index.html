@@ -13,34 +13,75 @@
 <body>
     <header>
         <nav>
+            <div class="row__topbar--black">
+                <div class="block__pub">
+                    <p>PROFITEZ-EN !</p>
+                    <p>LA LIVRAISON EST GRATUIRE A DOMICILE.</p>
+                </div>
+                <div class="block__connexion hide__mobile">
+                    <div class="connexion">
+                        <p id="local-language">English</p>
+                    </div>
+                    <div class="connexion">
+                        <input type="select" id="select-language">
+                        <nom></nom>
+                        <option value="" class="hide__desktop"></option>
+                        <option value="" class="hide__desktop"></option>
+                        <option value="" class="hide__desktop"></option>
+                        <option value="" class="hide__desktop"></option>
+                        <option value="" class="hide__desktop"></option>
+                        <option value="" class="hide__desktop"></option>
+                        <option value="" class="hide__desktop"></option>
+                        <option value="" class="hide__desktop"></option>
+                        <option value="" class="hide__desktop"></option>
+                        <option value="" class="hide__desktop"></option>
+                        <option value="" class="hide__desktop"></option>
+                    </div>
+                    <div class="connexion">
+                        <p id="localisation">Point de Vente</p>
+                    </div>
+                    <div class="connexion">
+                        <p id="user-login">Mon compte</p>
+                    </div>
+                </div>
+            </div>
             <div class="row__topbar--white">
+                <div class="topbar__logo">
+                    <div class="container__logo">
+                        <img id="logo" src="src/img/header/Under_Armour_logo-700x441.png" alt="Logo Armour">
+                    </div>
+                </div>
                 <div class="topbar__menu">
-                    <div class="menu__icons">
+                    <div class="menu__icons hide__desktop">
                         <div class="menu__icon">
                             <img id="menu-burger" src="src/img/header/icons8-menu-50.png" alt="Icône menu fermé">
                         </div>
-                        <div class="menu__icon hide">
+                        <div class="menu__icon hide__mobile">
                             <img id="menu-croix" src="src/img/header/icons8-x-48.png" alt="Icône croix">
                         </div>
                     </div>
-                    <div class="menu__text hide">
+                    <div class="menu__text hide__mobile">
                     </div>
-                </div>
-                <div class="topbar__logo">
-                    <img id="logo" src="src/img/header/Under_Armour_logo-700x441.png" alt="Logo Armour">
+                    <ul class="menu__list hide__mobile">
+                        <li>Nouveautés</li>
+                        <li>Chaussures</li>
+                        <li>Hommes</li>
+                        <li>Femmes</li>
+                        <li>Enfants</li>
+                        <li>Bonnes affaires</li>
+                    </ul>
                 </div>
                 <div class="topbar__icons">
-                    <div class="icon__search">
-                        <img id="search" src="src/img/header/icons8-chercher-24.png" alt="Icône recherche">
+                    <div class="block__search">
+                        <input type="text" class="input__search hide__mobile">
+                        <div class="icon__search">
+                            <img id="search" src="src/img/header/icons8-chercher-24.png" alt="Icône recherche">
+                        </div>
                     </div>
                     <div class="icon__bag">
                         <img id="bag" src="src/img/header/icons8-sac-de-courses-32.png" alt="Icône panier">
                     </div>
                 </div>
-            </div>
-            <div class="row__topbar--black">
-                <p>PROFITEZ-EN !</p>
-                <p>LA LIVRAISON EST GRATUIRE A DOMICILE.</p>
             </div>
         </nav>
     </header>
