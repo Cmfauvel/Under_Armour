@@ -18,25 +18,48 @@
                     <p>PROFITEZ-EN !</p>
                     <p>LA LIVRAISON EST GRATUIRE A DOMICILE.</p>
                 </div>
-                <div class="block__connexion hide__mobile">
+                <div class="block__connexion">
                     <div class="connexion">
                         <p id="local-language">English</p>
                     </div>
-                    <div class="connexion">
-                        <input type="select" id="select-language">
-                        <nom></nom>
-                        <option value="" class="hide__desktop"></option>
-                        <option value="" class="hide__desktop"></option>
-                        <option value="" class="hide__desktop"></option>
-                        <option value="" class="hide__desktop"></option>
-                        <option value="" class="hide__desktop"></option>
-                        <option value="" class="hide__desktop"></option>
-                        <option value="" class="hide__desktop"></option>
-                        <option value="" class="hide__desktop"></option>
-                        <option value="" class="hide__desktop"></option>
-                        <option value="" class="hide__desktop"></option>
-                        <option value="" class="hide__desktop"></option>
-                    </div>
+                    <div class="connexion country">
+                        <div class="select__flag">
+                            <img id="flag" src="src/img/header/icons8-france-48.png" alt="">
+                        </div>
+                        <p class="select__country">FR</p>
+                        <div class="select__arrow">
+                            <img id="arrow__lang" src="src/img/header/icons8-trier-50.png" alt="">
+                        </div>
+                        <!-- <div class="select__flag column">
+                            <div class="element__column">
+                                <div class="select__flag">
+                                    <img src="src/img/header/icons8-spain-48.png" alt="">
+                                </div>
+                                <p class="select__country">Espagne</p>
+                                </div>
+                            </div>
+                            <div class="element__column">
+                                <div class="select__flag">
+                                    <img src="src/img/header/icons8-germany-48.png" alt="">
+                                </div>
+                                <p class="select__country">Allemagne</p>
+                                </div>
+                            </div>
+                            <div class="element__column">
+                                <div class="select__flag">
+                                    <img src="src/img/header/icons8-canada-48.png" alt="">
+                                </div>
+                                <p class="select__country">Canada</p>
+                                </div>
+                            </div>
+                            <div class="element__column">
+                                <div class="select__flag">
+                                    <img src="src/img/header/icons8-belgium-48.png" alt="">
+                                </div>
+                                <p class="select__country">Belgique</p>
+                                </div>
+                            </div> -->
+                        </div>
                     <div class="connexion">
                         <p id="localisation">Point de Vente</p>
                     </div>
@@ -52,46 +75,133 @@
                     </div>
                 </div>
                 <div class="topbar__menu">
-                    <div class="menu__icons hide__desktop">
-                        <div class="menu__icon">
+                    <div class="menu__icons">
+                        <div class="menu__icon hide">
                             <img id="menu-burger" src="src/img/header/icons8-menu-50.png" alt="Icône menu fermé">
                         </div>
                         <!-- <div class="menu__icon hide__mobile">
                             <img id="menu-croix" src="src/img/header/icons8-x-48.png" alt="Icône croix">
                         </div> -->
                     </div>
-                    <div class="menu__list hide__mobile">
+                    <div class="menu__list">
                         <ul class="list">
-                            <li>Nouveautés</li>
-                            <li>Chaussures</li>
-                            <li>Hommes</li>
-                            <li>Femmes</li>
-                            <li>Enfants</li>
-                            <li>Bonnes affaires</li>
+                            <li class="element__listmenu" id="text-red">Nouveautés</li>
+                            <li class="element__listmenu">Chaussures</li>
+                            <li class="element__listmenu">Hommes</li>
+                            <li class="element__listmenu">Femmes</li>
+                            <li class="element__listmenu">Enfants</li>
+                            <li class="element__listmenu">Bonnes affaires</li>
                         </ul>
                     </div>
-                <div class="search__icon hide__desktop">
+                <div class="search__icon hide">
                     <img id="search" src="src/img/header/icons8-chercher-24.png" alt="Icône recherche">
                 </div>
-            </div>
-            <div class="topbar__icons">
-                <div class="block__search hide__mobile">
-                    <input type="text" value="Recherche" class="input__search">
-                    <div class="icon__search">
-                        <img id="search" src="src/img/header/icons8-chercher-24.png" alt="Icône recherche">
+                </div>
+                <div class="topbar__icons">
+                    <div class="block__search">
+                        <input type="text" value="Recherche" class="input__search">
+                        <div class="icon__search">
+                            <img id="search" src="src/img/header/icons8-chercher-24.png" alt="Icône recherche">
+                        </div>
+                    </div>
+                    <div class="icon__user hide">
+                        <img id="user" src="src/img/header/icons8-utilisateur-48.png" alt="">
+                    </div>
+                    <div class="icon__bag">
+                        <img id="bag" src="src/img/header/icons8-sac-de-courses-32.png" alt="Icône panier">
                     </div>
                 </div>
-                <div class="icon__user hide__desktop">
-                        <img id="user" src="src/img/header/icons8-utilisateur-48.png" alt="">
+            </div>
+            <div class="input__search--mobile hide">
+                <div class="input__search--left">
+                    <div class="icon__search--small">
+                        <img id="search2" src="src/img/header/icons8-chercher-24.png" alt="Icône recherche">
+                    </div>
+                    <input type="text" value="Recherche" class="input__search">
                 </div>
-                <div class="icon__bag">
-                        <img id="bag" src="src/img/header/icons8-sac-de-courses-32.png" alt="Icône panier">
+                <div class="icon__delete--small">
+                    <img id="delete" src="src/img/header/icons8-effacer-48.png" alt="Icône recherche">
+                </div>
+            </div>
+            <div class="menu--mobile hide">
+                <div class="elements__menu--panel">
+                    <p class="element__menu--panel">Nouveautés</p>
+                    <div class="arrow--right">
+                        <img class="icon__arrow--right" src="src/img/header/icons8-chevron-droit-48.png" alt="">
+                    </div>
+                </div>
+                <div class="elements__menu--panel">
+                    <p class="element__menu--panel">Chaussures</p>
+                    <div class="arrow--right">
+                        <img class="icon__arrow--right" src="src/img/header/icons8-chevron-droit-48.png" alt="">
+                    </div>
+                </div>
+                <div class="elements__menu--panel">
+                    <p class="element__menu--panel">Hommes</p>
+                    <div class="arrow--right">
+                        <img class="icon__arrow--right" src="src/img/header/icons8-chevron-droit-48.png" alt="">
+                    </div>
+                </div>
+                <div class="elements__menu--panel">
+                    <p class="element__menu--panel">Femmes</p>
+                    <div class="arrow--right">
+                        <img class="icon__arrow--right" src="src/img/header/icons8-chevron-droit-48.png" alt="">
+                    </div>
+                </div>
+                <div class="elements__menu--panel">
+                    <p class="element__menu--panel">Enfants</p>
+                    <div class="arrow--right">
+                        <img class="icon__arrow--right" src="src/img/header/icons8-chevron-droit-48.png" alt="">
+                    </div>
+                </div>
+                <div class="elements__menu--panel">
+                    <p class="element__menu--panel">Bonnes affaires</p>
+                    <div class="arrow--right">
+                        <img class="icon__arrow--right" src="src/img/header/icons8-chevron-droit-48.png" alt="">
+                    </div>
+                </div>
+                <div class="elements__menu--panel background__menu--gray">
+                    <p class="element__menu--panel">FR: Changer de pays</p>
+                    <div class="arrow--right">
+                        <img class="icon__arrow--right" src="src/img/header/icons8-chevron-droit-48.png" alt="">
+                    </div>
+                </div>
+                <div class="elements__menu--panel background__menu--gray">
+                    <p class="element__menu--panel">Service clients</p>
+                    <div class="arrow--right">
+                        <img class="icon__arrow--right" src="src/img/header/icons8-chevron-droit-48.png" alt="">
+                    </div>
+                </div>
+                <div class="elements__menu--panel background__menu--gray">
+                    <p class="element__menu--panel">Trouver un point de vente</p>
+                    <div class="arrow--right">
+                        <img class="icon__arrow--right" src="src/img/header/icons8-chevron-droit-48.png" alt="">
+                    </div>
+                </div>
+                <div class="elements__menu--panel background__menu--gray">
+                    <p class="element__menu--panel">Suivre une commande</p>
+                    <div class="arrow--right">
+                        <img class="icon__arrow--right" src="src/img/header/icons8-chevron-droit-48.png" alt="">
+                    </div>
+                </div>
+                <div class="elements__menu--panel background__menu--gray">
+                    <p class="element__menu--panel">Nous contacter</p>
+                    <div class="arrow--right">
+                        <img class="icon__arrow--right" src="src/img/header/icons8-chevron-droit-48.png" alt="">
+                    </div>
+                </div>
+                <div class="elements__menu--panel background__menu--gray">
+                    <p class="element__menu--panel">Infos sur l'entreprise</p>
+                    <div class="arrow--right">
+                        <img class="icon__arrow--right" src="src/img/header/icons8-chevron-droit-48.png" alt="">
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
 
     <main>
+        
 
     </main>
 
