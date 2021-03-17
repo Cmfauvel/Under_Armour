@@ -1,17 +1,17 @@
 //________________________header__________________________
 
-let mediaQueryA =  window.matchMedia("(max-width:767px)");
+// let mediaQueryA =  window.matchMedia("(max-width:767px)");
 
-mediaQueryA.addEventListener('change', (e) => {
-    if (e.matches) {
-        footerMobileContent.classList.remove("hide");
-        footerDesktopContent.classList.add("hide");
-    } else {
-        footerMobileContent.classList.add("hide");
-        footerDesktopContent.classList.remove("hide");
+// mediaQueryA.addEventListener('change', (e) => {
+//     if (e.matches) {
+//         footerMobileContent.classList.remove("hide");
+//         footerDesktopContent.classList.add("hide");
+//     } else {
+//         footerMobileContent.classList.add("hide");
+//         footerDesktopContent.classList.remove("hide");
 
-    }
-})
+//     }
+// })
 
 // let textPromo = document.querySelector(".block__pub");
 // let listMenu = document.querySelector(".list");
@@ -53,27 +53,64 @@ iconMenuFerme.addEventListener("click", event =>{
     menuMobile.classList.remove("hide");
     iconMenuFerme.classList.add('hide');
     iconMenuOuvert.classList.remove('hide');
+    mainDark.classList.add("dark");
 });
 
 iconMenuOuvert.addEventListener("click", event =>{
     menuMobile.classList.add("hide");
     iconMenuOuvert.classList.add('hide');
     iconMenuFerme.classList.remove('hide');
+    mainDark.classList.remove("dark");
 });
 
 //-----------------Menu Desktop
 
-let titreMenuDesktop = document.querySelector('.element__listmenu');
-let soustitreMenuDesktop = document.querySelector('.subtitle');
-let currentMenu = titresMenuDesktop.nextElementSibling;
+let titresMenuDesktop = document.getElementsByClassName('element__listmenu');
+let soustitreMenuDesktop = document.getElementsByClassName('subtitle');
+// let currentMenu = titresMenuDesktop.nextElementSibling;
 
-// for(let i = 0; i < titresMenuDesktop.length; i++){
-    titreMenuDesktop.addEventListener("mouseover", event =>{
-        console.log("mouseover", event, titreMenuDesktop, MouseEvent)
-        if(event.target === titreMenuDesktop) {            
-            soustitreMenuDesktop.classList.remove("hide");
-        } else if(event.target != titreMenuDesktop){
-            soustitreMenuDesktop.classList.add("hide");
-        }
-    // })
-})
+// let nouveautes = document.getElementById("text-red");
+// let sousNouveautes = document.getElementById("nouveaute_soustitre");
+
+// nouveautes.addEventListener("mouseover", event => {
+//     sousNouveautes.classList.remove("hide");
+// })
+
+// nouveautes.addEventListener("mouseout", event =>{
+//     sousNouveautes.classList.add("hide");
+// })
+
+//rester sur l'élément affiché quand souris dessus
+
+
+
+
+
+for(let i = 0; i < titresMenuDesktop.length; i++){
+    titresMenuDesktop[i].addEventListener("mouseover", event =>{
+        soustitreMenuDesktop[i].classList.remove("hide");
+        mainDark.classList.add("dark");
+        soustitreMenuDesktop[i].addEventListener("mouseover", event =>{
+            soustitreMenuDesktop[i].classList.remove("hide");
+            mainDark.classList.add("dark");
+            
+        })
+        soustitreMenuDesktop[i].addEventListener("mouseout", event =>{
+                    soustitreMenuDesktop[i].classList.add("hide");
+                    mainDark.classList.remove("dark");
+                })
+    })
+    titresMenuDesktop[i].addEventListener("mouseout", event =>{
+        soustitreMenuDesktop[i].classList.add("hide");
+        mainDark.classList.remove("dark");
+    })
+    // for(i = 0; i < soustitreMenuDesktop.length; i++){
+    //     soustitreMenuDesktop[i].addEventListener("mouseover", event =>{
+    //         soustitreMenuDesktop[i].classList.remove("hide");
+    //     })
+    //     soustitreMenuDesktop[i].addEventListener("mouseout", event =>{
+    //         soustitreMenuDesktop[i].classList.add("hide");
+    //     })
+    // }
+};
+
