@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/normalize.css">
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <link rel="icon" type="image/png" sizes="32x32" href="">
     <title>Title | String.</title>
 </head>
@@ -22,7 +24,7 @@
                     <div class="connexion">
                         <p id="local-language">English</p>
                     </div>
-                    <div class="connexion country">
+                    <div class="connexion">
                         <div class="select__flag">
                             <img id="flag" src="src/img/header/icons8-france-48.png" alt="">
                         </div>
@@ -75,13 +77,13 @@
                     </div>
                 </div>
                 <div class="topbar__menu">
-                    <div class="menu__icons">
-                        <div class="menu__icon hide">
+                    <div class="menu__icons hide">
+                        <div class="menu__icon" id="menu--ferme">
                             <img id="menu-burger" src="src/img/header/icons8-menu-50.png" alt="Icône menu fermé">
                         </div>
-                        <!-- <div class="menu__icon hide__mobile">
+                        <div class="hide" id="menu--ouvert">
                             <img id="menu-croix" src="src/img/header/icons8-x-48.png" alt="Icône croix">
-                        </div> -->
+                        </div>
                     </div>
                     <div class="menu__list">
                         <ul class="list">
@@ -101,7 +103,7 @@
                     <div class="block__search">
                         <input type="text" value="Recherche" class="input__search">
                         <div class="icon__search">
-                            <img id="search" src="src/img/header/icons8-chercher-24.png" alt="Icône recherche">
+                            <i class="fas fa-search"></i>
                         </div>
                     </div>
                     <div class="icon__user hide">
@@ -114,8 +116,8 @@
             </div>
             <div class="input__search--mobile hide">
                 <div class="input__search--left">
-                    <div class="icon__search--small">
-                        <img id="search2" src="src/img/header/icons8-chercher-24.png" alt="Icône recherche">
+                    <div class="icon__search">
+                        <i class="fas fa-search"></i>
                     </div>
                     <input type="text" value="Recherche" class="input__search">
                 </div>
@@ -197,6 +199,17 @@
                     </div>
                 </div>
             </div>
+            <div class="subtitle hide">
+                <h4>Hommes Nouveautés</h4>
+                <h4>Femmes Nouveautés</h4>
+                <h4>Enfants Nouveautés</h4>
+            </div>
+            <div class="subtitle hide"></div>
+            <div class="subtitle hide"></div>
+            <div class="subtitle hide"></div>
+            <div class="subtitle hide"></div>
+            <div class="subtitle hide"></div>
+            <div class="subtitle hide"></div>
         </nav>
     </header>
 
