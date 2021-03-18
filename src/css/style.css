@@ -197,3 +197,11 @@ a {
         font-size: 13px;
     }
 }
+
+@media screen and (min-width: 1600px) {
+    .container__title-text1 {
+        font-size: 56px;
+        line-height: 1;
+        margin: 0 0 8px 0;
+    }
+}
