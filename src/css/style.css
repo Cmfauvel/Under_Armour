@@ -1007,6 +1007,48 @@ main {
     END DIV TENDANCES
 */
 
+/* START CAROUSEL */
+
+.carousel__arrow--right,
+.carousel__arrow--left {
+  width: 30px;
+  height: 30px;
+  margin-top: 100px;
+}
+
+.carousel__arrow--right {
+  margin-left: 15px;
+}
+
+#previous__slide,
+#next__slide {
+  font-size: 1.8em;
+  cursor: pointer;
+}
+
+.carousel {
+  display: flex;
+  margin-left: 200px;
+  height: 220px;
+  position: relative;
+}
+
+.slide {
+  display: flex;
+  width: 100%;
+}
+
+.slide__img {
+  width: 20%;
+  margin-left: 15px;
+}
+
+.show {
+  display: flex;
+}
+
+/* END CAROUSEL */
+
 @media screen and (min-width: 1600px) {
   .container__title-text1 {
       font-size: 56px;
