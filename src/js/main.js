@@ -19,16 +19,11 @@ mediaQueryA.addEventListener('change', (e) => {
 
 
 
-var span = document.getElementsByClassName("extend");
+let contentColumnTitle = document.querySelectorAll(".content_column_title");
+console.log(contentColumnTitle);
 
-    for (let i = 0; i < span.length; i++) {
-        span[i].addEventListener("click", function () {
-            this.classList.toggle("active");
-            var ul = this.nextElementSibling;
-            if (ul.style.display === "block") {
-                ul.style.display = "none";
-            } else {
-                ul.style.display = "block";
-            }
+    for (let i = 0; i < contentColumnTitle.length; i++) {
+        contentColumnTitle[i].addEventListener("click", function (e) {
+            console.log(e);
         });
     }
