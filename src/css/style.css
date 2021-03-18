@@ -3,6 +3,7 @@
 }
 /* ___________________________HEADER___________________________ */
 
+
 @font-face {
     font-family: "Armour_W_XBd";
     src: url("../font/Armour\ XBold.ttf") format("woff");
@@ -956,8 +957,62 @@ main {
   }
 }
 
+/*ul, li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}*/
+
+/*
+    START DIV TENDANCES
+*/
+.content_four_column {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 100px;
+    font-family: Armour_W_Bd, Arial,sans-serif;
+    text-align: left;
+}
+
+
+.content_column{
+    margin-right: 22px;
+    margin-left: 0px;
+    width: 22%;
+}
+
+.content_four_column h2{
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    padding: 0px 0px;
+    line-height: 25px;
+    
+}
+
+.content_column a{
+    line-height: 30px;
+    font-size: 16px;
+    color: #000;
+}
+
+.content_column a:hover{
+    color: #E51B24;
+}
+
+/*
+    END DIV TENDANCES
+*/
+
+
 /* _____________________________FOOTER____________________________ */
 
+
+
+
+
+/*
+    START FOOTER
+*/
 #footer h3, a, div, p{
     font-size: 13px;
     text-decoration: none;
@@ -1138,6 +1193,10 @@ main {
     }
 }
 
+/*
+    Footer MOBILE
+*/
+
 @media screen and (max-width: 767px) {
 
     #footer h3 a{
@@ -1214,3 +1273,7 @@ main {
         padding: 0px 40px; /*ajouter padding poiour mobile*/
     }
 }
+
+/*
+    END FOOTER
+*/
