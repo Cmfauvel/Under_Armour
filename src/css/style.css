@@ -48,115 +48,6 @@ ul, li{
     END DIV TENDANCES
 */
 
-*/
-
-
-/*
-    START CAROUSEL
-*/
-
-    .item {
-    margin: 40px 10px;
-    background-color: #fff;
-    transition: transform 0.3s;
-    transform: translate3d(0, -1px, 0);
-    }
-
-    .item img {
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: transform 0.3s
-    }
-
-    .item img:hover{
-        transform: scale(1.1);
-    }
-
-    .item__body {
-    padding: 20px;
-    }
-
-    .item__title {
-    height: 28px;
-    overflow: hidden;
-    text-align: center;
-    font-family: Armour_W_Rg, Arial,sans-serif;
-    font-size: 13px;
-    margin-bottom: 5px;
-    color: #232323;
-    }
-
-    .stars{
-        padding: 3px 0px;
-        text-align: center;
-    }
-
-    .fa-star.grey {
-	color: #5a5a5a;
-    opacity: 0.4;
-}
-
-    .item__description p {
-        padding-top: 5px;
-        text-align: center;
-        font-family: Armour_W_Rg, Arial,sans-serif;
-        color: #5a5a5a
-    }
-
-    .items {
-    position: relative;
-    }
-
-
-    /**
-    CAROUSEL 
-    */
-    .carousel {
-    position: relative;
-    margin: 0px 50px;
-    }
-
-    .carousel__container::after {
-    content: "";
-    clear: both;
-    display: table;
-    }
-
-    .carousel__item {
-    float: left;
-    }
-
-    .carousel__next,
-    .carousel__prev {
-    position: absolute;
-    width: 45px;
-    height: 45px;
-    background:url(/src/img/img-carousel/right.svg) center center no-repeat;
-    top: 40%;
-    margin-top: -20px;
-    right: -40px;
-    cursor: pointer;
-    }
-
-    .carousel__prev {
-    background-image: url(/src/img/img-carousel/left.svg);
-    right: auto;
-    left: -40px;
-    }
-
-    .carousel__prev--hidden, .carousel__next--hidden  {
-    opacity: 0.4;
-    }
-
-
-    @media screen and (min-width: 800px){
-}
-
-/*
-    END CAROUSEL
-*/
-
 
 /*
     START FOOTER
@@ -408,6 +299,8 @@ ul, li{
         font-size: 12px;
     }
 
+
+    
 
 /*
     Footer

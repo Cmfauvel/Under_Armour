@@ -1,3 +1,6 @@
+/**
+ * FOOTER
+ */
 let footerMobileContent = document.querySelector(".footer_mobile_content");
 let footerDesktopContent = document.querySelector(".footer_desktop_content");
 
@@ -15,5 +18,17 @@ mediaQueryA.addEventListener('change', (e) => {
 })
 
 
-    
 
+var span = document.getElementsByClassName("extend");
+
+    for (let i = 0; i < span.length; i++) {
+        span[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var ul = this.nextElementSibling;
+            if (ul.style.display === "block") {
+                ul.style.display = "none";
+            } else {
+                ul.style.display = "block";
+            }
+        });
+    }
