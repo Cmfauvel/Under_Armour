@@ -272,12 +272,11 @@ nav {
   color: white;
   text-align: center;
   font-size: 0.8em;
-  line-height: 0.2em;
   display: flex;
   width: 100%;
   height: 48px;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 7px 20px;
 }
 
 .block__pub{
@@ -585,13 +584,13 @@ h4 {
 
   .row__topbar--black {
     font-size: 0.5em;
-    height: 28px;
   }
 
   .block__pub{
     margin-left: 0;
     width: 100%;
     text-align: center;
+    padding-top: 3px;
   }
 
   .row__topbar--white {
@@ -1031,6 +1030,8 @@ main {
   margin-left: 200px;
   height: 220px;
   position: relative;
+  
+  overflow: hidden;
 }
 
 .slide {

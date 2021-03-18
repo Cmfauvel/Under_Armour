@@ -1,17 +1,12 @@
 //________________________header__________________________
 
+function removeClass(element, className) {
+    element.classList.remove(className);
+}
 
-// let textPromo = document.querySelector(".block__pub");
-// let listMenu = document.querySelector(".list");
-// var doc = document.documentElement;
-// console.log(doc.clientWidth);
-// //événement ICI
-// if(doc.clientWidth < 1570 && doc.clientWidth > 767) {
-//     // textPromo.classList.add('block__pub--left');
-//     listMenu.classList.add('list--small');
-// } else if(doc.clientWidth < 1300 && doc.clientWidth > 767) {
-//     textPromo.classList.remove('block__pub');
-// }
+function addClass(element, className) {
+    element.classList.add(className);
+}
 
 //--------------------Icon search mobile
 
@@ -23,16 +18,18 @@ let cpt = 0;
 searchIcon.addEventListener("click", event => {
        cpt++;
     if(cpt % 2 == 0) {
-        searchBar.classList.remove("hide");
-        mainDark.classList.add("dark");
+        removeClass(searchBar, 'hide');
+        addClass(mainDark, 'dark');
     } else if(cpt % 2 != 0) {
-        searchBar.classList.add("hide");
-        mainDark.classList.remove("dark");
+        addClass(searchBar, 'hide');
+        removeClass(mainDark, 'dark');
     }
 });
 
 //-----------------------Menu burger mobile
 
+let menuIcons = document.querySelector('.menu__icons');
+let iconUser = document.querySelector('.icon__user');
 let menuMobile = document.querySelector('.menu--mobile');
 let iconMenuFerme = document.querySelector('.menu__icon');
 let iconMenuOuvert = document.querySelector('#menu--ouvert');
@@ -55,24 +52,6 @@ iconMenuOuvert.addEventListener("click", event =>{
 
 let titresMenuDesktop = document.getElementsByClassName('element__listmenu');
 let soustitreMenuDesktop = document.getElementsByClassName('subtitle');
-// let currentMenu = titresMenuDesktop.nextElementSibling;
-
-// let nouveautes = document.getElementById("text-red");
-// let sousNouveautes = document.getElementById("nouveaute_soustitre");
-
-// nouveautes.addEventListener("mouseover", event => {
-//     sousNouveautes.classList.remove("hide");
-// })
-
-// nouveautes.addEventListener("mouseout", event =>{
-//     sousNouveautes.classList.add("hide");
-// })
-
-//rester sur l'élément affiché quand souris dessus
-
-
-
-
 
 for(let i = 0; i < titresMenuDesktop.length; i++){
     titresMenuDesktop[i].addEventListener("mouseover", event =>{
@@ -92,14 +71,6 @@ for(let i = 0; i < titresMenuDesktop.length; i++){
         soustitreMenuDesktop[i].classList.add("hide");
         mainDark.classList.remove("dark");
     })
-    // for(i = 0; i < soustitreMenuDesktop.length; i++){
-    //     soustitreMenuDesktop[i].addEventListener("mouseover", event =>{
-    //         soustitreMenuDesktop[i].classList.remove("hide");
-    //     })
-    //     soustitreMenuDesktop[i].addEventListener("mouseout", event =>{
-    //         soustitreMenuDesktop[i].classList.add("hide");
-    //     })
-    // }
 };
 
 //__________________CAROUSEL
@@ -124,15 +95,26 @@ previousArrow.addEventListener('click', event =>{
 
 let footerMobileContent = document.querySelector(".footer_mobile_content");
 let footerDesktopContent = document.querySelector(".footer_desktop_content");
-let mediaQuery =  window.matchMedia("(max-width:767px)");
+let mediaQuerySmall =  window.matchMedia("(max-width:767px)");
 
-mediaQuery.addEventListener('change', (e) => {
+mediaQuerySmall.addEventListener('change', (e) => {
     if (e.matches) {
         footerMobileContent.classList.remove("hide");
         footerDesktopContent.classList.add("hide");
+        removeClass(menuIcons, 'hide');
+        removeClass(searchIcon, 'hide');
+        removeClass(iconUser, 'hide');
+        removeClass(footerMobileContent, 'hide')
+        addClass(footerDesktopContent, 'hide');
     } else {
         footerMobileContent.classList.add("hide");
         footerDesktopContent.classList.remove("hide");
+        addClass(menuIcons, 'hide');
+        addClass(searchIcon, 'hide');
+        addClass(iconUser, 'hide');
+
+        addClass(footerMobileContent, 'hide');
+        removeClass(footerDesktopContent, 'hide');
 
     }
 })
