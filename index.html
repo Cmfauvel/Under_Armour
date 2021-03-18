@@ -7,14 +7,470 @@
     <link rel="stylesheet" href="src/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="src/fontawesome-free-5.15.2-web/css/all.css">
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <link rel="icon" type="image/png" sizes="32x32" href="">
-    <title>Title | String.</title>
+    <title>Sportswear, chaussures et accessoires sport | Under Armour FR</title>
+    <meta name="description" content="Site Officiel: Under Armour propose les vêtements, chaussures et accessoires de sport les plus novateurs. LIVRAISON GRATUITE disponible en France.">
 </head>
 
 <body>
+    <header>
+        <nav>
+            <div class="row__topbar--black">
+                <div class="block__pub">
+                    <p>PROFITEZ-EN !</p>
+                    <p>LA LIVRAISON EST GRATUIRE A DOMICILE.</p>
+                </div>
+                <div class="block__connexion">
+                    <div class="connexion">
+                        <p id="local-language">English</p>
+                    </div>
+                    <div class="connexion">
+                        <div class="select__flag">
+                            <img id="flag" src="src/img/header/icons8-france-48.png" alt="">
+                        </div>
+                        <p class="select__country">FR</p>
+                        <div class="select__arrow">
+                            <img id="arrow__lang" src="src/img/header/icons8-trier-50.png" alt="">
+                        </div>
+                        <!-- <div class="select__flag column">
+                            <div class="element__column">
+                                <div class="select__flag">
+                                    <img src="src/img/header/icons8-spain-48.png" alt="">
+                                </div>
+                                <p class="select__country">Espagne</p>
+                                </div>
+                            </div>
+                            <div class="element__column">
+                                <div class="select__flag">
+                                    <img src="src/img/header/icons8-germany-48.png" alt="">
+                                </div>
+                                <p class="select__country">Allemagne</p>
+                                </div>
+                            </div>
+                            <div class="element__column">
+                                <div class="select__flag">
+                                    <img src="src/img/header/icons8-canada-48.png" alt="">
+                                </div>
+                                <p class="select__country">Canada</p>
+                                </div>
+                            </div>
+                            <div class="element__column">
+                                <div class="select__flag">
+                                    <img src="src/img/header/icons8-belgium-48.png" alt="">
+                                </div>
+                                <p class="select__country">Belgique</p>
+                                </div>
+                            </div> -->
+                        </div>
+                    <div class="connexion">
+                        <p id="localisation">Point de Vente</p>
+                    </div>
+                    <div class="connexion">
+                        <p id="user-login">Mon compte</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row__topbar--white">
+                <div class="topbar__logo">
+                    <div class="container__logo">
+                        <img id="logo" src="src/img/header/Under_Armour_logo-700x441.png" alt="Logo Armour">
+                    </div>
+                </div>
+                <div class="topbar__menu">
+                    <div class="menu__icons hide">
+                        <div class="menu__icon" id="menu--ferme">
+                            <img id="menu-burger" src="src/img/header/icons8-menu-50.png" alt="Icône menu fermé">
+                        </div>
+                        <div class="hide" id="menu--ouvert">
+                            <img id="menu-croix" src="src/img/header/icons8-x-48.png" alt="Icône croix">
+                        </div>
+                    </div>
+                    <div class="menu__list">
+                        <ul class="list">
+                            <li class="element__listmenu" id="text-red">Nouveautés</li>
+                            <li class="element__listmenu">Chaussures</li>
+                            <li class="element__listmenu">Hommes</li>
+                            <li class="element__listmenu">Femmes</li>
+                            <li class="element__listmenu">Enfants</li>
+                            <li class="element__listmenu">Bonnes affaires</li>
+                        </ul>
+                    </div>
+                <div class="search__icon hide">
+                    <img id="search" src="src/img/header/icons8-chercher-24.png" alt="Icône recherche">
+                </div>
+                </div>
+                <div class="topbar__icons">
+                    <div class="block__search">
+                        <input type="text" value="Recherche" class="input__search">
+                        <div class="icon__search">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                    <div class="icon__user hide">
+                        <img id="user" src="src/img/header/icons8-utilisateur-48.png" alt="">
+                    </div>
+                    <div class="icon__bag">
+                        <img id="bag" src="src/img/header/icons8-sac-de-courses-32.png" alt="Icône panier">
+                    </div>
+                </div>
+            </div>
+            <div class="input__search--mobile hide">
+                <div class="input__search--left">
+                    <div class="icon__search">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <input type="text" value="Recherche" class="input__search">
+                </div>
+                <div class="icon__delete--small">
+                    <img id="delete" src="src/img/header/icons8-effacer-48.png" alt="Icône recherche">
+                </div>
+            </div>
+            <div class="menu--mobile hide">
+                <div class="elements__menu--panel">
+                    <p class="element__menu--panel">Nouveautés</p>
+                    <div class="arrow--right">
+                        <img class="icon__arrow--right" src="src/img/header/icons8-chevron-droit-48.png" alt="">
+                    </div>
+                </div>
+                <div class="elements__menu--panel">
+                    <p class="element__menu--panel">Chaussures</p>
+                    <div class="arrow--right">
+                        <img class="icon__arrow--right" src="src/img/header/icons8-chevron-droit-48.png" alt="">
+                    </div>
+                </div>
+                <div class="elements__menu--panel">
+                    <p class="element__menu--panel">Hommes</p>
+                    <div class="arrow--right">
+                        <img class="icon__arrow--right" src="src/img/header/icons8-chevron-droit-48.png" alt="">
+                    </div>
+                </div>
+                <div class="elements__menu--panel">
+                    <p class="element__menu--panel">Femmes</p>
+                    <div class="arrow--right">
+                        <img class="icon__arrow--right" src="src/img/header/icons8-chevron-droit-48.png" alt="">
+                    </div>
+                </div>
+                <div class="elements__menu--panel">
+                    <p class="element__menu--panel">Enfants</p>
+                    <div class="arrow--right">
+                        <img class="icon__arrow--right" src="src/img/header/icons8-chevron-droit-48.png" alt="">
+                    </div>
+                </div>
+                <div class="elements__menu--panel">
+                    <p class="element__menu--panel">Bonnes affaires</p>
+                    <div class="arrow--right">
+                        <img class="icon__arrow--right" src="src/img/header/icons8-chevron-droit-48.png" alt="">
+                    </div>
+                </div>
+                <div class="elements__menu--panel background__menu--gray">
+                    <p class="element__menu--panel">FR: Changer de pays</p>
+                    <div class="arrow--right">
+                        <img class="icon__arrow--right" src="src/img/header/icons8-chevron-droit-48.png" alt="">
+                    </div>
+                </div>
+                <div class="elements__menu--panel background__menu--gray">
+                    <p class="element__menu--panel">Service clients</p>
+                    <div class="arrow--right">
+                        <img class="icon__arrow--right" src="src/img/header/icons8-chevron-droit-48.png" alt="">
+                    </div>
+                </div>
+                <div class="elements__menu--panel background__menu--gray">
+                    <p class="element__menu--panel">Trouver un point de vente</p>
+                    <div class="arrow--right">
+                        <img class="icon__arrow--right" src="src/img/header/icons8-chevron-droit-48.png" alt="">
+                    </div>
+                </div>
+                <div class="elements__menu--panel background__menu--gray">
+                    <p class="element__menu--panel">Suivre une commande</p>
+                    <div class="arrow--right">
+                        <img class="icon__arrow--right" src="src/img/header/icons8-chevron-droit-48.png" alt="">
+                    </div>
+                </div>
+                <div class="elements__menu--panel background__menu--gray">
+                    <p class="element__menu--panel">Nous contacter</p>
+                    <div class="arrow--right">
+                        <img class="icon__arrow--right" src="src/img/header/icons8-chevron-droit-48.png" alt="">
+                    </div>
+                </div>
+                <div class="elements__menu--panel background__menu--gray">
+                    <p class="element__menu--panel">Infos sur l'entreprise</p>
+                    <div class="arrow--right">
+                        <img class="icon__arrow--right" src="src/img/header/icons8-chevron-droit-48.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="subtitle hide">
+                <div id="nouveautes">
+                    <h4>HOMMES NOUVEAUTES</h4>
+                    <h4>FEMMES NOUVEAUTES</h4>
+                    <h4>ENFANTS NOUVEAUTES</h4>
+                </div>
+            </div>
+            <div class="subtitle hide" id="">
+                <div class="subtitle__row1">
+                    <div class="subtitle__column" id="subtitle__border--right">
+                        <h4>HOVR™ RUNNING</h4>
+                        <h4>CHAUSSURES DE COURSE</h4>
+                        <h4>CHAUSSURES D’ENTRAÎNEMENT</h4>
+                        <h4>CHAUSSURES DE GOLF</h4>
+                        <h4>BOOTS TACTICAL</h4>
+                    </div>
+                    <div class="subtitle__column">
+                        <h4>CHAUSSURES POUR HOMMES</h4>
+                        <p>Chaussures de course</p>
+                        <p>Chaussures d'entraînement</p>
+                        <p>Chaussures de randonnée et tactical</p>
+                        <p>Chaussures sportstyle</p>
+                        <p>Chaussures de golf</p>
+                        <p>Claquettes et sandales</p>
+                        <p>Chaussures de basket</p>
+                        <p>Chaussures de foot</p>
+                    </div>
+                    <div class="subtitle__column">
+                        <h4>CHAUSSURES POUR FEMMES</h4>
+                        <p>Chaussures de course</p>
+                        <p>Chaussures d'entraînement</p>
+                        <p>Chaussures sportstyle</p>
+                        <p>Chaussures de golf</p>
+                        <p>Claquettes et sandales</p>
+                    </div>
+                    <div class="subtitle__column">
+                        <h4>CHAUSSURES POUR ENFANTS</h4>
+                        <p>Chaussures de course</p>
+                        <p>Chaussures de basket</p>
+                        <p>Chaussures sportstyle</p>
+                    </div>
+                </div>
+                <div class="subtitle__row2">
+                    <div class="row2--column">
+                        <h4 id="decouvre--red">DÉCOUVRE NOTRE BOOTS DE RANDONNÉE:</h4>
+                        <h4>HOMMES</h4>
+                        <h4>FEMMES</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="subtitle hide">
+                <div class="subtitle__row1">
+                    <div class="subtitle__column--six" id="subtitle__border--right">
+                        <h4>HOVR™ RUNNING</h4>
+                        <h4>MAPMYRUN APP</h4>
+                        <h4>COMPRESSION</h4>
+                        <h4>CASQUES ET ECOUTEURS</h4>
+                        <h4>PROJECT ROCK</h4>
+                        <h4>TECHNOLOGIE</h4>
+                    </div>
+                    <div class="subtitle__column--six">
+                        <h4>CHAUSSURES</h4>
+                        <p>Chaussures de course</p>
+                        <p>Chaussures d'entraînement</p>
+                        <p>Chaussures de randonnée et tactical</p>
+                        <p>Chaussures sportstyle</p>
+                        <p>Chaussures de golf</p>
+                        <p>Claquettes et sandales</p>
+                        <p>Chaussures de basket</p>
+                        <p>Chaussures de foot</p>
+                    </div>
+                    <div class="subtitle__column--six">
+                        <h4>HAUTS</h4>
+                        <p>Vestes</p>
+                        <p>Vestes sans manches</p>
+                        <p>Hauts à capuche</p>
+                        <p>Manches longues</p>
+                        <p>Manches courtes</p>
+                        <p>Polos</p>
+                        <p>Sans manches et débardeurs</p>
+                    </div>
+                    <div class="subtitle__column--six">
+                        <h4>BAS</h4>
+                        <p>Pantalons</p>
+                        <p>Collants et leggings</p>
+                        <p>Shorts</p>
+                        <p>Sous-vêtements</p>
+                    </div>
+                    <div class="subtitle__column--six">
+                        <h4>ACCESSOIRES</h4>
+                        <p>Casquettes/Bonnets</p>
+                        <p>Gants</p>
+                        <p>Chaussettes</p>
+                        <p>Sacs</p>
+                        <p>Ceintures</p>
+                    </div>
+                    <div class="subtitle__column--six">
+                        <h4>SPORTS</h4>
+                        <p>Entraînement</p>
+                        <p>Course</p>
+                        <p>Golf</p>
+                        <p>Sportstyle</p>
+                        <p>Basketball</p>
+                        <p>Foot</p>
+                    </div>
+                </div>
+                <div class="subtitle__row2">
+                    <div class="row2--column">
+                        <h4 id="decouvre--red">LES ÉQUIPEMENTS DONT TOUT LE MONDE RÊVE:</h4>
+                        <h4>T-SHIRTS</h4>
+                        <h4>SHORTS</h4>
+                        <h4>GOLF</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="subtitle hide"> 
+                <div class="subtitle__row1">
+                    <div class="subtitle__column--six" id="subtitle__border--right">
+                        <h4>HOVR™ RUNNING</h4>
+                        <h4>MAPMYRUN APP</h4>
+                        <h4>CASQUES ET ECOUTEURS</h4>
+                        <h4>GRANDES TAILLES</h4>
+                        <h4>PROJECT ROCK</h4>
+                        <h4>TECHNOLOGIE</h4>
+                    </div>
+                    <div class="subtitle__column--six">
+                        <h4>CHAUSSURES</h4>
+                        <p>Chaussures de course</p>
+                        <p>Chaussures d'entraînement</p>
+                        <p>Chaussures sportstyle</p>
+                        <p>Chaussures de golf</p>
+                        <p>Claquettes et sandales</p>
+                    </div>
+                    <div class="subtitle__column--six">
+                        <h4>HAUTS</h4>
+                        <p>Vestes</p>
+                        <p>Vestes sans manches</p>
+                        <p>Hauts à capuche</p>
+                        <p>Manches longues</p>
+                        <p>Manches courtes</p>
+                        <p>Soutiens-gorge de sport</p>
+                        <p>Sans manches et débardeurs</p>
+                    </div>
+                    <div class="subtitle__column--six">
+                        <h4>BAS</h4>
+                        <p>Pantalons</p>
+                        <p>Leggings et Capris</p>
+                        <p>Shorts</p>
+                        <p>Sous-vêtements</p>
+                    </div>
+                    <div class="subtitle__column--six">
+                        <h4>ACCESSOIRES</h4>
+                        <p>Casquettes/Bonnets</p>
+                        <p>Gants</p>
+                        <p>Chaussettes</p>
+                        <p>Sacs</p>
+                    </div>
+                    <div class="subtitle__column--six">
+                        <h4>SPORTS</h4>
+                        <p>Studio et Yoga</p>
+                        <p>Entraînement</p>
+                        <p>Course</p>
+                        <p>Golf</p>
+                        <p>Sportstyle</p>
+                    </div>
+                </div>
+                <div class="subtitle__row2">
+                    <div class="row2--column">
+                        <h4 id="decouvre--red">LES ÉQUIPEMENTS DONT TOUT LE MONDE RÊVE:</h4>
+                        <h4>MANCHES LONGUES</h4>    
+                        <h4>VESTES</h4> 
+                        <h4>YOGA</h4>   
+                    </div>
+                </div>
+            </div>
+            <div class="subtitle hide"> 
+                <div class="subtitle__row1">
+                    <div class="subtitle__column--six" id="subtitle__border--right">
+                        <h4>PROJECT ROCK</h4>
+                        <h4>CASQUES ET ECOUTEURS</h4>
+                        <h4>MEILLEURES VENTES</h4>
+                    </div>
+                    <div class="subtitle__column--six">
+                        <h4>CHAUSSURES</h4>
+                        <p>Chaussures de course</p>
+                        <p>Chaussures d'entraînement</p>
+                        <p>Chaussures sportstyle</p>
+                    </div>
+                    <div class="subtitle__column--six">
+                        <h4>HAUTS</h4>
+                        <p>Hauts à capuche</p>
+                        <p>Manches longues</p>
+                        <p>Manches courtes</p>
+                    </div>
+                    <div class="subtitle__column--six">
+                        <h4>BAS</h4>
+                        <p>Pantalons</p>
+                        <p>Collants et leggings</p>
+                        <p>Shorts</p>
+                    </div>
+                    <div class="subtitle__column--six">
+                        <h4>ACCESSOIRES</h4>
+                        <p>Casquettes/Bonnets</p>
+                        <p>Chaussettes</p>
+                        <p>Sacs</p>
+                    </div>
+                    <div class="subtitle__column--six">
+                        <h4>SPORTS</h4>
+                        <p>Entraînement</p>
+                        <p>Golf</p>
+                        <p>Basketball</p>
+                    </div>
+                </div>
+                <div class="subtitle__row2">
+                    <div class="row2--column" id="row2-width-larger">
+                        <h4 id="decouvre--red">L'ENSEMBLE IDÉAL POUR TON PROCHAIN ENTRAÎNEMENT:</h4>
+                        <h4>ARTICLES</h4>    
+                        <h4>POUR</h4> 
+                        <h4>L'ENTRAINEMENT</h4>  
+                        <h4>CHAUSSURES</h4> 
+                    </div>
+                </div>
+            </div>
+            <div class="subtitle hide">
+                <div id="bonnes-affaires">
+                    <h4>HOMMES BONNES AFFAIRES</h4>
+                    <h4>FEMMES BONNES AFFAIRES</h4>
+                    <h4>ENFANTS BONNES AFFAIRES</h4>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="wrapper_home">
+            <!-- img home -->
+            <picture>
+                <source media="(min-width:768px)" srcset="https://underarmour.scene7.com/is/image/Underarmour/SS21_RUN_Flow_OldSite_PRM_Cogen_Up?scl=1">
+                <source srcset="https://underarmour.scene7.com/is/image/Underarmour/SS21_RUN_Flow_OldSite_MB_Cogen?scl=1">
+                <img class="img_home" alt="FLOW VELOCITI WIND" width="100%">
+            </picture>
+            <!-- img home -->
+            <!-- text home -->
+            <div class="container__title">
+                <a href="">
+                    <h3 class="container__title-text1">
+                        LÉGÈRES. RAPIDES. PERCUTANTES.
+                    </h3>
+                    <h4 class="container__title-text2">
+                        <br>UA FLOW VELOCITI WIND
+                    </h4>
+                </a>
+            </div>
+            <!-- text home -->
+            <!-- buttons home -->
+            <div class="container__btns-home">
+                <a href="" class="button-home btn__home-mobile">ACHETER POUR HOMMES</a>
+                <a href="" class="button-home btn__home-desktop">ACHETER POUR HOMMES</a>
+                <a href="" class="button-home btn__home-mobile">ACHETER POUR FEMMES</a>
+                <a href="" class="button-home btn__home-desktop">ACHETER POUR FEMMES</a>
+                <a href="" class="button-home btn__home-mobile">EN SAVOIR PLUS</a>
+                <a href="" class="button-home btn__home-desktop">EN SAVOIR PLUS</a>
+            </div>
+            <!-- buttons home -->
+        </div>
+    </main>
+
+
     <footer id="footer">
         <div id="footer_black_bar" class="footer_black_bar"></div>
-
+    
         <!-- rajouter class hide pour le desktop-->
         <div id="footer_mobile_content" class="footer_mobile_content hide">
             <h3>
@@ -42,19 +498,20 @@
                 <a href="">Infos sur l'entreprise</a>
             </h3>
         </div>
-
+    
         <div id="footer_email" class="footer_email">
             <form action="" class="form_email">
                 <label for="email" id="label_email" class="form_email_input">Inscris-toi et reçois nos emails</label>
-                <input type="text" name="email" id="input_email" class="form_email_input" placeholder="Entre ton adresse email">
-                <button id="submit_email" type="submit_email" name="email_submit" class="form_email_input"><span>RECEVOIR NOS E-MAILS</span><i class="fas fa-caret-right"></i></button>
+                <input type="text" name="email" id="input_email" class="form_email_input"
+                    placeholder="Entre ton adresse email">
+                <button id="submit_email" type="submit_email" name="email_submit" class="form_email_input"><span>RECEVOIR
+                        NOS E-MAILS</span><i class="fas fa-caret-right"></i></button>
             </form>
         </div>
         <div id="footer_social" class="footer_social">
             <img class="image_logo_run" src="src/img/img-footer/unnamed.png" alt="my fitness run">
             <p>La plus vaste communauté de fitness dans le monde</p>
         </div>
-
         <!-- rajouter class hide pour le mobile-->
         <div id="footer_desktop_content" class="footer_desktop_content">
             <div class="footer_content_col">
