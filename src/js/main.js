@@ -86,23 +86,27 @@ for(let i = 0; i < titresMenuDesktop.length; i++){
     })
 };
 
-//__________________CAROUSEL
+//__________________CAROUSEL DESKTOP
 
 let currentSlide = document.querySelector('.slide');
 let nextArrow = document.querySelector('#next__slide');
 let previousArrow = document.querySelector('#previous__slide');
 let nextSlide = currentSlide.nextElementSibling;
+// let slides = document.getElementsByClassName('slide_img');
+// let largeurEcran = window.innerWidth;
+// let containerSlides = document.getElementsByClassName('slide');
+// let slideIndex = 1;
 
-nextArrow.addEventListener('click', event =>{
-    currentSlide.classList.add('hide');
-    nextSlide.classList.remove('hide');
-    console.log(nextSlide)
-})
-
-previousArrow.addEventListener('click', event =>{
-    nextSlide.classList.add('hide');
+    nextArrow.addEventListener('click', event =>{
+        currentSlide.classList.add('hide');
+        nextSlide.classList.remove('hide');
+    });
+    previousArrow.addEventListener('click', event =>{
+        nextSlide.classList.add('hide');
     currentSlide.classList.remove('hide');
-})
+    });
+
+
 
 //___________________FOOTER
 
