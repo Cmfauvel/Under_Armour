@@ -51,7 +51,7 @@ let iconMenuFerme = document.querySelector('.menu__icon');
 let iconMenuOuvert = document.querySelector('#menu--ouvert');
 
 iconMenuFerme.addEventListener("click", event =>{
-    menuMobile.classList.remove("hide");
+    removeClass(menuMobile, 'hide');
     iconMenuFerme.classList.add('hide');
     iconMenuOuvert.classList.remove('hide');
     mainDark.classList.add("dark");
@@ -119,9 +119,10 @@ iconMenuOuvert.addEventListener("click", event =>{
                     //___________________FOOTER
                     
                     
+
+
 let menuIcons = document.querySelector('.menu__icons');
 let iconUser = document.querySelector('.icon__user');
-
 let footerMobileContent = document.querySelector(".footer_mobile_content");
 let footerDesktopContent = document.querySelector(".footer_desktop_content");
 let mediaQuerySmall =  window.matchMedia("(max-width:767px)");
