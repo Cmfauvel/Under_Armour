@@ -486,6 +486,33 @@ h4 {
   -webkit-filter: brightness(0.6);
 }
 
+.item__body {
+    padding: 0px;
+    }
+
+    .item__title {
+    height: 28px;
+    overflow: hidden;
+    text-align: center;
+    font-family: Armour_W_Rg, Arial,sans-serif;
+    font-size: 13px;
+    color: #232323;
+    }
+
+    .stars{
+        text-align: center;
+    }
+
+    .fa-star.grey {
+	color: #5a5a5a;
+    opacity: 0.4;
+}
+
+    .item__description p {
+        text-align: center;
+        font-family: Armour_W_Rg, Arial,sans-serif;
+        color: #5a5a5a
+    }
 
 @media screen and (max-width: 991px) {
 
@@ -1408,7 +1435,7 @@ main {
         font-size: 12px;
     }
 
-}
+
 
 
     
@@ -1495,3 +1522,4 @@ main {
 /*
     END FOOTER
 */
+}
