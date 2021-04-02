@@ -118,7 +118,7 @@ let footerDesktopContent = document.querySelector(".footer_desktop_content");
 let mediaQuerySmall = window.matchMedia("(max-width:767px)");
 
 
-    mediaQuerySmall.addEventListener('change', changeClassForMobile);
+mediaQuerySmall.addEventListener('change', changeClassForMobile);
     
 if (mediaQuerySmall.matches) {
     mobileDisplay();
