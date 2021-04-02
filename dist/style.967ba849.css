@@ -13,17 +13,17 @@ li {
 
 @font-face {
     font-family: "Armour_W_XBd";
-    src: url("../font/Armour XBold.ttf") format("woff");
+    src: url("/Armour XBold.1983247c.ttf") format("woff");
 }
 
 @font-face {
     font-family: "Armour_W_Bd";
-    src: url("../font/Armour Bold.ttf") format("woff");
+    src: url("/Armour Bold.23c9c150.ttf") format("woff");
 }
 
 @font-face {
     font-family: "Armour_W_Rg";
-    src: url("../font/Armour Regular.ttf") format("woff");
+    src: url("/Armour Regular.78b95ddd.ttf") format("woff");
 }
 
 body {
@@ -1499,3 +1499,5 @@ p {
     END FOOTER
 */
 }
+
+/*# sourceMappingURL=/style.967ba849.css.map */
