@@ -122,43 +122,54 @@ let nextSlide = currentSlide.nextElementSibling;
 
     mediaQuerySmall.addEventListener('change', changeClassForMobile);
     
+if (mediaQuerySmall.matches) {
+    mobileDisplay();
+}
+
 function changeClassForMobile(e) {
     
     if (e.matches) {
-        removeClass(menuIcons, 'hide');
-        removeClass(searchIcon, 'hide');
-        removeClass(iconUser, 'hide');
-
-        addClass(contentTendanceDesktop, 'hide');
-        removeClass(contentTendanceMobile, 'hide');
-
-        removeClass(footerMobileContent, 'hide')
-        addClass(footerDesktopContent, 'hide');
-        
-
-        for (let i = 0; i < contentTitleMobile.length; i++) {
-            let title = contentTitleMobile[i];
-            let ul = title.nextElementSibling;
-            let iconPlus = title.children[0];
-            let iconMinus = title.children[1];
-                
-            title.addEventListener("click", function (e) {
-                toggleClass(iconMinus, 'hide');
-                toggleClass(iconPlus, 'hide');
-                toggleClass(ul, 'hide');
-            });
-        }
-    } else {
-            
-        addClass(menuIcons, 'hide');
-        addClass(searchIcon, 'hide');
-        addClass(iconUser, 'hide');
-
-        addClass(contentTendanceMobile, 'hide');
-        removeClass(contentTendanceDesktop, 'hide');
-
-        addClass(footerMobileContent, 'hide');
-        removeClass(footerDesktopContent, 'hide');
-
+        mobileDisplay();
+    } else {   
+        versionDesktop();
     }
+}
+
+
+function mobileDisplay() {
+    removeClass(menuIcons, 'hide');
+    removeClass(searchIcon, 'hide');
+    removeClass(iconUser, 'hide');
+
+    addClass(contentTendanceDesktop, 'hide');
+    removeClass(contentTendanceMobile, 'hide');
+
+    removeClass(footerMobileContent, 'hide');
+    addClass(footerDesktopContent, 'hide');
+
+
+    for (let i = 0; i < contentTitleMobile.length; i++) {
+        let title = contentTitleMobile[i];
+        let ul = title.nextElementSibling;
+        let iconPlus = title.children[0];
+        let iconMinus = title.children[1];
+
+        title.addEventListener("click", function (e) {
+            toggleClass(iconMinus, 'hide');
+            toggleClass(iconPlus, 'hide');
+            toggleClass(ul, 'hide');
+        });
+    }
+}
+
+function versionDesktop() {
+    addClass(menuIcons, 'hide');
+    addClass(searchIcon, 'hide');
+    addClass(iconUser, 'hide');
+
+    addClass(contentTendanceMobile, 'hide');
+    removeClass(contentTendanceDesktop, 'hide');
+
+    addClass(footerMobileContent, 'hide');
+    removeClass(footerDesktopContent, 'hide');
 }
