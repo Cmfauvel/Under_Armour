@@ -83,8 +83,10 @@ for (let i = 0; i < titresMenuDesktop.length; i++) {
 //__________________CAROUSEL DESKTOP
 
 let currentSlide = document.querySelector('.slide');
-let nextArrow = document.querySelector('#next__slide');
-let previousArrow = document.querySelector('#previous__slide');
+let nextArrow = document.getElementById('next__slide');
+let previousArrow = document.getElementById('previous__slide');
+console.log(nextArrow);
+console.log(previousArrow);
 let nextSlide = currentSlide.nextElementSibling;
 // let slides = document.getElementsByClassName('slide_img');
 // let largeurEcran = window.innerWidth;
