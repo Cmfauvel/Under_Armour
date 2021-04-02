@@ -119,7 +119,7 @@ let mediaQuerySmall = window.matchMedia("(max-width:767px)");
 
 
 mediaQuerySmall.addEventListener('change', changeClassForMobile);
-
+    
 if (mediaQuerySmall.matches) {
     mobileDisplay();
 }
@@ -128,7 +128,7 @@ function changeClassForMobile(e) {
 
     if (e.matches) {
         mobileDisplay();
-    } else {
+    } else {   
         versionDesktop();
     }
 }
@@ -152,7 +152,7 @@ function mobileDisplay() {
         let iconPlus = title.children[0];
         let iconMinus = title.children[1];
 
-        title.addEventListener("click", function(e) {
+        title.addEventListener("click", function (e) {
             toggleClass(iconMinus, 'hide');
             toggleClass(iconPlus, 'hide');
             toggleClass(ul, 'hide');
